@@ -12,8 +12,8 @@ import {
 } from '@/components/SocialIcons'
 import view from '@/images/photos/view.jpeg';
 import singapore from '@/images/photos/singapore.jpeg'
-import selfie1 from '@/images/photos/selfie-1.png'
-import selfie2 from '@/images/photos/selfie-2.png'
+import selfie1 from '@/images/photos/selfie-1.jpg'
+import selfie2 from '@/images/photos/selfie-2.jpg'
 import bangkok from '@/images/photos/bangkok.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
