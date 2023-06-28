@@ -87,7 +87,12 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Projects I have been involved in my professional live"
-        intro="In my professional live I was part of a lot of exciting and challenging projects but these are the ones that I am most proud of. These are all business applications so unfortunately I cannot share the code with you."
+        intro={[
+          "Throughout my career, I've been fortunate to partake in a range of thrilling and varied projects. From leading a dynamic frontend team at eco.banking to guiding strategic technology decisions for an automobile company, and even building a Flutter app from scratch, each role presented unique challenges and opportunities for growth.",
+          "My diverse experiences have gifted me a panoramic view of the tech landscape, enabling me to understand the distinct needs of various stakeholders. I excel at transforming those needs into technical requirements or crafting hands-on solutions.",
+          "Every project is a new adventure, and I'm driven by a passion for harnessing the potential of cutting-edge technologies. Yet, I also appreciate the reliability of battle-tested technologies, especially when it aligns with a client's preferences. The goal is always to strike a balance between innovation and dependability, to deliver the best solutions.",
+          "Highlighted below are the projects that I take immense pride in, as they best exhibit my abilities and growth trajectory. Additionally, I've included a timeline to give a comprehensive view of my professional journey. Please note that due to the professional environment these projects were developed in, I'm unable to share GitHub links, but I'm excited to share these pieces of my career story with you.",
+        ]}
       >
         <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16">
           {projects.map((project) => (
