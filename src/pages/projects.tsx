@@ -1,82 +1,79 @@
 import Head from "next/head";
 import { SimpleLayout } from "@/components/SimpleLayout";
 import React from "react";
-import Card from "@/components/card";
+import { Project, ProjectCard } from "@/components/project-card";
 
-type Projects = {
-  name: string;
-  description: string;
-  link: {
-    href: string;
-    label: string;
-  };
-  role: string;
-  achievements: string[];
-};
-
-const projects: Array<Projects> = [
+const projects: Array<Project> = [
   {
     name: "eco.banking",
     description:
-      "eco.banking digitizes the initiation and processing of commercial loan processes.",
+      "eco.banking is a SaaS product poised to revolutionize the banking sector. Designed to empower banks to deliver fully digital inquiry processes to their customers, this white-label solution offers flexibility and customization to match each bank's unique needs. But it doesn't stop at the banks – we've integrated a dedicated portal for both customers and bank employees. This ensures streamlined management of inquiries, ushering in a new era of digital banking processes. With eco.banking, we're breaking down the walls of traditional banking and making room for seamless, digital interactions!",
     link: { href: "https://ecobanking.de", label: "eco.banking.de" },
     role: "Frontend-Lead",
-    achievements: [
-      "Created flexible Architecture for all processes",
-      "Made the change from Styled-Components to ChakraUI",
-      "Introduced react-query",
+    tasksAndAchievements: [
+      "Navigating through the sea of diverse data that our inquiry processes generate at eco.banking, I had the pleasure of crafting a dynamic, fully typesafe form builder. This ingenious tool allows us to effortlessly create customized forms for each bank and inquiry process, a truly revolutionary stride in our operational efficiency. Around this time, I also introduced a significant transformation in our design language by replacing styled-components, which had been in use since our inception in 2018, with ChakraUI in 2021. This refreshed design library has been embraced enthusiastically by our team and continues to be utilized to its full capacity.",
+      "Day-to-day, my role is as vibrant as it is rewarding. Welcoming new developers into our fold and guiding them through our extensive codebase is a delightful experience. Seeing them learn and grow with each detailed code review I conduct, where we collectively strive for excellence, makes every day meaningful. I enjoy the responsibility of delegating tasks to team members, matching their unique strengths and capabilities with the tasks at hand, nurturing not just project success, but also individual growth. I also get to breathe new life into our code, refurbishing older snippets with modern architectural principles, ensuring our tech stack stays as fresh as a daisy. In the midst of all this, I also play the pivotal role of coordinating new releases and deployments, seamlessly transitioning our projects with minimal hiccups. It's quite a journey, and I relish every bit of it!",
+    ],
+
+    technologies: [
+      "Create React App with TypeScript / JavaScript",
+      "React Final Form",
+      "Redux - hopefully not for long",
+      "react-query",
+      "Axios",
+    ],
+  },
+  {
+    name: "SaveStrike",
+    description:
+      "SaveStrike is an innovative app designed to inspire young people to save effectively for their goals. With a user-friendly interface, users can effortlessly create multiple savings goals within the app. Each goal is then allocated a monthly saving target. The genius part? The app keeps track of their progress and nudges them with a celebration notification when they've saved enough to purchase their desired item. It's more than just an app - it's a fun, interactive financial companion nudging young people towards smarter saving habits",
+    link: { href: "https://savestrike.de", label: "savestrike.de" },
+    role: "Consultant, Developer and DevOps Engineer",
+    tasksAndAchievements: [
+      "When I embarked on this journey, I carefully selected technologies that turned out to be a perfect match for our needs, facilitating a fast and smooth development process. I championed automation by implementing a fully automated release to TestFlight and AppStore, using Fastlane and GithubActions. Additionally, I set up a CI/CD pipeline with GitHubActions and docker-compose for the backend, improving our development and production environment.",
+      "My role included making key decisions regarding technologies and architecture, administering Jira, Confluence, and Slack to foster smooth team collaboration, and wearing the DevOps hat for our Flutter app, Next.js frontend, and Rails backend. I took joy in providing guidance to the development team, creating a supportive and engaging environment, and ensuring our code quality remained top-notch through thorough frontend code reviews.",
+    ],
+    technologies: [
+      "Turborepo - Next.js + TypeScript + Blitz.js + Tailwind",
+      "Flutter - Dart",
+      "Ruby on Rails",
     ],
   },
   {
     name: "Senger Mobility Hub",
-    description: "Online presence for a car dealership",
+    description:
+      "Senger Mobility Hub involved crafting a robust and dynamic online presence for a prominent car dealership. To mirror the expansive physical presence of the dealership, we developed an advanced search for all Senger locations, effectively digitalizing their brick-and-mortar stores. We didn't stop there; we also integrated a comprehensive job portal to attract top talent and ensure growth. Keeping users engaged, we added a news section for the latest updates, offers, and industry insights. The crowning glory, however, was the implementation of a next-level car search feature. This advanced tool allows customers to find their dream car with unparalleled ease and precision, truly elevating the digital car shopping experience. This project was all about marrying functionality with user experience, creating a digital platform as expansive and inviting as their physical locations.",
     link: { href: "https://senger-mobility.de", label: "senger-mobility.de" },
-    role: "Architect",
-    achievements: [
-      "Made the initial decision to go with Wagtail",
-      "Implemented Algolia as flexible search engine",
-      "Switched to MapBox for great cards inside the application",
+    role: "Innovation Architect and IT Consultant",
+    tasksAndAchievements: [
+      "Steering our technology direction towards Django/Wagtail, I led the initial decision that resulted in robust and user-friendly web development. My successful implementation of Algolia introduced a highly flexible and efficient search engine that significantly enriched our user experience. Notably, my decision to switch to MapBox was a game-changer, bringing high-quality, intuitive maps to our application and enhancing the user interface. I delivered all work packages on time and within budget, a testament to my project management skills and commitment to efficiency.",
+      "I became a vital link between the customer and the development team, a go-to contact for clearing blockers, and a guide making critical technology decisions. My responsibilities also included administering Jira, Confluence, and Slack, managing Algolia to continually improve our search capabilities, and crafting MapBox designs that align with customer CI/CD.",
+    ],
+    technologies: [
+      "Python - Django / Wagtail + some React components",
+      "Algolia as Search Engine",
+      "Mapbox as Map Provider",
     ],
   },
   {
-    name: "tr8fin",
+    name: "evalue.in",
     description:
-      "tr8fin is a digital platform that enables German companies to export their goods and services to world markets.",
-    link: { href: "https://tr8fin.de", label: "tr8fin.de" },
-    role: "Software Architect",
-    achievements: [
-      "Set up the general Architecture - React.js + Ruby on Rails",
-      "Setup the deployment process with Docker / docker-compose",
-      "Streamlined the testing process",
+      "evalue.in is a powerful tool that takes the guesswork out of evaluating your accounting data. It offers a wealth of KPIs, presenting insightful snapshots of your business and guiding future decision-making. What's more, all this rich data is beautifully laid out in a clear, visually pleasing dashboard.",
+    link: { href: "https://evaluein.de", label: "evaluein.de" },
+    role: "Frontend Developer + DevOps engineer",
+    tasksAndAchievements: [
+      "The journey of setting up evalue.in was an exhilarating adventure from scratch. I was instrumental in making crucial tech stack decisions leading to our maiden release. To add a touch of elegance to our user interface, I customized Highcharts for our dashboard. I also spun a Jenkins-based CI/CD pipeline, ensuring automated, seamless deployments of both the frontend and backend.",
+      "Diving into the world of frontend feature development, I brought essential app functionalities to life, and extended my guiding hand to junior frontend colleagues, aiding their growth. Playing the role of a translator, I adeptly bridged the gap between business goals and technical implementations, ensuring every line of code we crafted was an opportunity for learning and maintaining code excellence.",
     ],
-  },
-  {
-    name: "Finannzierungsportal",
-    description:
-      "Financing portal for medium-sized companies in three steps - digital, fast and tailor made",
-    link: {
-      href: "http://finanzierungsporta.ermoeglicher.de",
-      label: "finanzierungsportal.ermoeglicher.de",
-    },
-    role: "Software Architect",
-    achievements: [
-      "Usage of Lerna as a Monorepo in the Frontend",
-      "Zero downtime deployments with docker-compose",
-      "First time working on a project as technical Product Owner",
+    technologies: [
+      "Create React App with TypeScript",
+      "Axios",
+      "Redux",
+      "Material UI",
+      "Highcharts",
     ],
   },
 ];
-
-function LinkIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M15.712 11.823a.75.75 0 1 0 1.06 1.06l-1.06-1.06Zm-4.95 1.768a.75.75 0 0 0 1.06-1.06l-1.06 1.06Zm-2.475-1.414a.75.75 0 1 0-1.06-1.06l1.06 1.06Zm4.95-1.768a.75.75 0 1 0-1.06 1.06l1.06-1.06Zm3.359.53-.884.884 1.06 1.06.885-.883-1.061-1.06Zm-4.95-2.12 1.414-1.415L12 6.344l-1.415 1.413 1.061 1.061Zm0 3.535a2.5 2.5 0 0 1 0-3.536l-1.06-1.06a4 4 0 0 0 0 5.656l1.06-1.06Zm4.95-4.95a2.5 2.5 0 0 1 0 3.535L17.656 12a4 4 0 0 0 0-5.657l-1.06 1.06Zm1.06-1.06a4 4 0 0 0-5.656 0l1.06 1.06a2.5 2.5 0 0 1 3.536 0l1.06-1.06Zm-7.07 7.07.176.177 1.06-1.06-.176-.177-1.06 1.06Zm-3.183-.353.884-.884-1.06-1.06-.884.883 1.06 1.06Zm4.95 2.121-1.414 1.414 1.06 1.06 1.415-1.413-1.06-1.061Zm0-3.536a2.5 2.5 0 0 1 0 3.536l1.06 1.06a4 4 0 0 0 0-5.656l-1.06 1.06Zm-4.95 4.95a2.5 2.5 0 0 1 0-3.535L6.344 12a4 4 0 0 0 0 5.656l1.06-1.06Zm-1.06 1.06a4 4 0 0 0 5.657 0l-1.061-1.06a2.5 2.5 0 0 1-3.535 0l-1.061 1.06Zm7.07-7.07-.176-.177-1.06 1.06.176.178 1.06-1.061Z"
-        fill="currentColor"
-      />
-    </svg>
-  );
-}
 
 export default function Projects() {
   return (
@@ -92,32 +89,9 @@ export default function Projects() {
         title="Projects I have been involved in my professional live"
         intro="In my professional live I was part of a lot of exciting and challenging projects but these are the ones that I am most proud of. These are all business applications so unfortunately I cannot share the code with you."
       >
-        <ul
-          role="list"
-          className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
-        >
+        <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16">
           {projects.map((project) => (
-            <Card as="li" key={project.name}>
-              <h2 className="mt-6 text-base font-semibold text-blue-600 dark:text-blue-200">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
-              </h2>
-              <Card.Role role={project.role} />
-              <Card.Description className="h-20">
-                {project.description}
-              </Card.Description>
-              <ul
-                role="list"
-                className="mt-4 list-inside list-disc text-sm text-zinc-600 dark:text-zinc-400"
-              >
-                {project.achievements.map((achievement) => (
-                  <li key={achievement}>{achievement}</li>
-                ))}
-              </ul>
-              <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-blue-500 dark:text-zinc-200">
-                <LinkIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2">{project.link.label}</span>
-              </p>
-            </Card>
+            <ProjectCard project={project} key={project.name} />
           ))}
         </ul>
       </SimpleLayout>

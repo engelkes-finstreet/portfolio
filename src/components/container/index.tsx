@@ -1,7 +1,6 @@
-import { forwardRef } from "react";
-import clsx from "clsx";
 import { OuterContainer } from "./outer-container";
 import { InnerContainer } from "./inner-container";
+import React from "react";
 
 type Props = {
   children: React.ReactNode;
