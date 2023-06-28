@@ -94,7 +94,7 @@ export default function Projects() {
           "Highlighted below are the projects that I take immense pride in, as they best exhibit my abilities and growth trajectory. Additionally, I've included a timeline to give a comprehensive view of my professional journey. Please note that due to the professional environment these projects were developed in, I'm unable to share GitHub links, but I'm excited to share these pieces of my career story with you.",
         ]}
       >
-        <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16">
+        <ul role="list" className="grid grid-cols-1 gap-y-12">
           {projects.map((project) => (
             <ProjectCard project={project} key={project.name} />
           ))}
