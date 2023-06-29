@@ -6,7 +6,7 @@ import { CardCta } from "@/components/card/card-cta";
 import { CardDescription } from "@/components/card/card-description";
 import { CardEyebrow } from "@/components/card/card-eyebrow";
 import { CardRole } from "./card-role";
-import { CardTitle } from "@/components/card/card-title";
+import { CardTitle, CardPrimaryTitle } from "@/components/card/card-title";
 
 type IndexProps = {
   as?: React.ElementType;
@@ -31,5 +31,6 @@ Card.Eyebrow = CardEyebrow;
 Card.Link = CardLink;
 Card.Role = CardRole;
 Card.Title = CardTitle;
+Card.PrimaryTitle = CardPrimaryTitle;
 
 export default Card;

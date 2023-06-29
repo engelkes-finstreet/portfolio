@@ -23,9 +23,7 @@ export function ProjectCard({ project }: Props) {
     <div className="gap-x-8 md:grid md:grid-cols-4 md:items-baseline">
       <Card className={"w-full md:col-span-3 md:w-3/4"}>
         <div className={"block md:hidden"}>
-          <Card.Title className={"text-blue-500 dark:text-blue-600"}>
-            {project.name}
-          </Card.Title>
+          <Card.PrimaryTitle>{project.name}</Card.PrimaryTitle>
           <Card.Description className={"mb-4"}>{project.role}</Card.Description>
         </div>
         <div className={"flex flex-col gap-y-8"}>
