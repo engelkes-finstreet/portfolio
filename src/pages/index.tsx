@@ -113,8 +113,8 @@ type Resume = {
 const resume: Array<Resume> = [
   {
     company: "finstreet GmbH",
-    title: "Senior Software Engineer",
-    start: "2021",
+    title: "Lead Developer - Frontend",
+    start: "Jul 2023",
     end: {
       label: "Present",
       dateTime: new Date().getFullYear(),
@@ -122,9 +122,15 @@ const resume: Array<Resume> = [
   },
   {
     company: "finstreet GmbH",
+    title: "Senior Software Engineer",
+    start: "Jan 2021",
+    end: "June 2023",
+  },
+  {
+    company: "finstreet GmbH",
     title: "Software Engineer",
-    start: "2018",
-    end: "2021",
+    start: "March 2018",
+    end: "Dec 2020",
   },
   {
     company: "DEOS AG",
