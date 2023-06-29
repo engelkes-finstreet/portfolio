@@ -12,14 +12,6 @@ function Article({ article }) {
         <Card.Title href={`/articles/${article.slug}`}>
           {article.title}
         </Card.Title>
-        <Card.Eyebrow
-          as="time"
-          dateTime={article.date}
-          className="md:hidden"
-          decorate
-        >
-          {formatDate(article.date)}
-        </Card.Eyebrow>
         <Card.Description>{article.description}</Card.Description>
         <Card.Cta>Read article</Card.Cta>
       </Card>
@@ -49,7 +41,7 @@ export default function ArticlesIndex({ articles }) {
         intro="With a keen interest in AI and a solid grasp of TypeScript, I'm constantly tuned into the latest programming trends, ready to innovate in this fast-paced tech universe."
       >
         <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
-          <div className="flex max-w-3xl flex-col space-y-16">
+          <div className="flex max-w-2xl flex-col space-y-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
