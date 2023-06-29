@@ -26,7 +26,11 @@ export function ProjectCard({ project }: Props) {
           <Card.PrimaryTitle>{project.name}</Card.PrimaryTitle>
           <Card.Description className={"mb-4"}>{project.role}</Card.Description>
         </div>
-        <div className={"flex flex-col gap-y-8"}>
+        <div
+          className={
+            "flex flex-col gap-y-6 divide-y divide-zinc-100 dark:divide-zinc-100/10"
+          }
+        >
           <div>
             <Card.Title>Project Description</Card.Title>
             <Card.Description>{project.description}</Card.Description>
@@ -54,7 +58,7 @@ type ProjectListProps = {
 function ProjectList({ heading, items }: ProjectListProps) {
   return (
     <div>
-      <Card.Title>{heading}</Card.Title>
+      <Card.Title className={"mt-4"}>{heading}</Card.Title>
       <Card.Description>
         <ul
           role={"list"}
