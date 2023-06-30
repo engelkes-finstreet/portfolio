@@ -62,22 +62,18 @@ export default function About() {
               </p>
 
               <p>
-                Based in the picturesque city of Munster, Germany, at 32 years
-                of age, you'll find a tech enthusiast who balances a passion for
-                sports with a career in the technological world. Freeletics and
-                soccer fill up the free time when code isn't occupying the mind.
-                A past active role in Rotaract has shaped a community-oriented
-                perspective that resonates in every endeavor. Adventure pulses
-                through the veins, with a constant yearning to discover new
-                places and immerse in diverse cultures. Climbing ranks high
-                among favorite activities, embodying the same determination,
-                resilience, and problem-solving skills that are integral to
-                coding.
+                Based in the city of Munster, Germany, at 32 years of age,
+                you'll find a tech enthusiast who balances a passion for sports
+                with a career in the technological world. Freeletics and soccer
+                fill up the free time when code isn't occupying my mind. A past
+                active role in Rotaract has shaped a community-oriented
+                perspective that helps me thrive in any private and professional
+                context.
               </p>
 
               <p>
-                My journey into the world of programming started at the young
-                age of 13, when I began automating Windows and Excel tasks. My
+                My journey into the world of programming started at the age of
+                13, when I began automating Windows and Excel tasks. My
                 curiosity drove me to an apprenticeship at DEOS where I not only
                 honed my skills in Java, but also wrote an application to
                 monitor the energy consumption of large buildings – marrying my
@@ -87,27 +83,29 @@ export default function About() {
               <p>
                 Over the years, my fascination with programming led me to
                 finstreet in 2018. Here, I began as an IT consultant, and later
-                specialized in Frontend React Development with TypeScript.
-                Recently, I've turned my attention to LLMs (Large Language
-                Models) and their intriguing, diverse use cases. My journey
-                through the tech landscape hasn't been a solitary one. I have a
-                passion for teaching, which I've expressed since my school days,
-                where I tutored my peers and taught children 10-finger typing.
-                At finstreet, I've created extensive learning material for
-                React, and had the privilege of guiding several colleagues on
-                their path to mastering the technology.
+                specialized in Frontend React Development with TypeScript. At
+                finstreet I had the possibility to jump into different roles,
+                from leading a Frontend team over building the DevOps department
+                to an Architect role. Recently, I've turned my attention to LLMs
+                (Large Language Models) and their intriguing, diverse use cases.
+                My journey through the tech landscape hasn't been a solitary
+                one. I have a passion for teaching, which I've expressed since
+                my school days, where I tutored my peers and taught children
+                10-finger typing. At finstreet, I've created extensive learning
+                material for React, and had the privilege of guiding several
+                colleagues on their path to mastering the technology.
               </p>
 
               <p>
                 Now, I'm keen to extend this passion to a wider audience through
-                this blog. My goal is to help people understand the tremendous
-                benefits of ChatGPT and how it can be harnessed to improve
-                everyday life. Technology is a tool, and like all tools, it's
-                most effective when understood and used correctly. I'm here to
-                help make that a reality for as many people as possible. So,
-                whether you're a tech enthusiast or simply curious, I invite you
-                to join me on this exciting journey. Let's explore, learn, and
-                grow together. Welcome aboard!
+                my blog. My goal is to help people understand the benefits of
+                ChatGPT and how it can be harnessed to improve everyday life.
+                Technology is a tool, and like all tools, it's most effective
+                when understood and used correctly. I'm here to help make that a
+                reality for as many people as possible. So, whether you're a
+                tech enthusiast or simply curious, I invite you to join me on
+                this exciting journey. Let's explore, learn, and grow together.
+                Welcome aboard!
               </p>
             </div>
           </div>
