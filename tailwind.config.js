@@ -66,7 +66,7 @@ module.exports = {
           "--tw-prose-th-borders": theme("colors.zinc.200"),
           "--tw-prose-td-borders": theme("colors.zinc.100"),
 
-          "--tw-prose-invert-body": theme("colors.zinc.400"),
+          "--tw-prose-invert-body": theme("colors.zinc.300"),
           "--tw-prose-invert-headings": theme("colors.zinc.200"),
           "--tw-prose-invert-links": theme("colors.blue.400"),
           "--tw-prose-invert-links-hover": theme("colors.blue.400"),
@@ -99,6 +99,11 @@ module.exports = {
           },
 
           // Headings
+          h1: {
+            fontSize: theme("fontSize.2xl")[0],
+            color: "var(--tw-prose-headings)",
+            fontWeight: theme("fontWeight.semibold"),
+          },
           "h2, h3": {
             color: "var(--tw-prose-headings)",
             fontWeight: theme("fontWeight.semibold"),

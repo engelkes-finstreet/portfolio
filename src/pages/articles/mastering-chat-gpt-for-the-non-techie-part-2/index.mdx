@@ -1,6 +1,7 @@
 import {ArticleLayout} from "@/components/ArticleLayout";
 import Image from 'next/image';
 import aiAndHumanInLivingRoom from './ai-and-human-in-living-room.png'
+import {ChatGptConversation} from "@/components/chatgpt-conversation";
 
 export const meta = {
     author: 'Patrick Engelkes',
@@ -52,22 +53,19 @@ As we venture into the realm of real-world scenarios, we will adopt a balanced a
 
 Our first scenario will involve planning a trip - an area where ChatGPT can showcase its ability to generate creative and detailed suggestions. We will provide a prompt, demonstrate how to interact with ChatGPT, and then reveal the AI's response. This step-by-step process will give you an in-depth view of how a typical interaction with ChatGPT unfolds and the quality of responses you can expect. Below you will find the prompt that I send to ChatGPT and the response as well:
 
-Prompt:
-
-> Give me an itinerary for a 2 day stay in Rome.
-
-Response:
-
-> If you have only two days in Rome, it's important to prioritize the must-see attractions. Here's a suggested itinerary for a 2-day stay in Rome:
-Day 1:
-Morning: Start your day by visiting the iconic Colosseum. Explore the ancient amphitheater and learn about its history through a guided tour. Consider purchasing skip-the-line tickets in advance to save time.
-Afternoon: Head to the Roman Forum, located nearby. This archaeological site showcases the ruins of ancient government buildings and offers fascinating insights into Roman civilization.
-Evening: Take a leisurely stroll through the charming neighborhood of Trastevere. Enjoy the picturesque streets, try local cuisine at one of the traditional trattorias, and soak up the lively atmosphere.
-Day 2:
-Morning: Begin your day at Vatican City. Visit St. Peter's Basilica, the largest church in the world, and marvel at its grandeur. Take time to explore the Vatican Museums and the Sistine Chapel, home to magnificent artwork, including Michelangelo's famous frescoes.
-Afternoon: Head to the Pantheon, an impressive ancient Roman temple known for its incredible dome. Spend some time admiring the architectural marvel and the breathtaking interior.
-Evening: Visit the Trevi Fountain, one of Rome's most famous landmarks. Toss a coin into the fountain to ensure your return to the Eternal City, and enjoy dinner at one of the nearby trattorias.
-While this itinerary covers some of the main highlights of Rome, keep in mind that the city has much more to offer. If time allows, consider extending your stay to explore other attractions like the Spanish Steps, Piazza Navona, or Villa Borghese Gardens.
+<ChatGptConversation conversations={[
+    {
+        question: "Prompt to ChatGPT",
+        answer: "Give me an itinerary for a 3 day stay in Rome.",
+        defaultOpen: true,
+    },
+    {
+        question: "Answer from ChatGPT",
+        answer:
+            "# Visit to Rome: \n## Day 1:\n- Morning: Visit the Colosseum and Roman Forum.\n- Afternoon: Explore Palatine Hill and Circus Maximus.\n- Evening: Take a stroll around Trastevere neighborhood, known for its charming streets and restaurants.\n\n## Day 2:\n- Morning: Visit Vatican City. Start with St. Peter's Basilica, then explore the Vatican Museums including the Sistine Chapel.\n- Afternoon: Enjoy a leisurely walk through Villa Borghese Gardens or visit the Pantheon.\n- Evening: Indulge in authentic Italian cuisine at one of Rome's many trattorias or pizzerias.\n\n## Day 3:\n- Morning: Explore the historic center of Rome. Visit Trevi Fountain, Piazza Navona, and Spanish Steps.\n- Afternoon: Discover ancient history at Capitoline Museums or take a guided tour of Castel Sant'Angelo.\n- Evening: Enjoy an evening walk along Tiber River or experience traditional Roman nightlife in Campo de' Fiori square.",
+        defaultOpen: false,
+    },
+]}/>
 
 ## Stepping Into the Spotlight: Your Active Role in Unleashing ChatGPT's Potential
 

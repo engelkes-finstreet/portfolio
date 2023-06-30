@@ -16,6 +16,7 @@ import React from "react";
 import { GitHubIcon } from "@/components/icons/social/GithubIcon";
 import { InstagramIcon } from "@/components/icons/social/InstagramIcon";
 import { LinkedInIcon } from "@/components/icons/social/LinkedinIcon";
+import Markdown from "marked-react";
 
 function MailIcon(props) {
   return (
