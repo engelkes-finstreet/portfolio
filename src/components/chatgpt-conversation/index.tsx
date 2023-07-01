@@ -10,6 +10,7 @@ export type Conversation = {
 
 type Props = {
   conversations: Conversation[];
+  title: string;
 };
 
 function Conversation({ question, answer, defaultOpen }: Conversation) {
@@ -34,10 +35,10 @@ function Conversation({ question, answer, defaultOpen }: Conversation) {
   );
 }
 
-export const ChatGptConversation = ({ conversations }: Props) => {
+export const ChatGptConversation = ({ conversations, title }: Props) => {
   return (
     <div className="w-full">
-      <h3>Conversation with ChatGPT:</h3>
+      <h3>{title}:</h3>
       <div className="mx-auto w-full space-y-4 rounded-2xl bg-zinc-100 p-4 dark:bg-zinc-800">
         {conversations.map((conversation) => (
           <Conversation
