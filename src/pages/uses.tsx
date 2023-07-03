@@ -30,11 +30,6 @@ export default function Uses() {
               superior design. A true digital powerhouse that never breaks a
               sweat!
             </Tool>
-            <Tool title="Apple Pro Display XDR (Standard Glass)">
-              The only display on the market if you want something HiDPI and
-              bigger than 27”. When you’re working at planetary scale, every
-              pixel you can get counts.
-            </Tool>
             <Tool title="MX Keys Master Serie">
               In my digital toolkit, you'll find a fantastic external keyboard
               for my MacBook. This keyboard isn't just good, it's one of the
