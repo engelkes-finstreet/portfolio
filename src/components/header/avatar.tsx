@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link, { LinkProps } from "next/link";
 import Image from "next/image";
-import avatarImage from "@/images/avatar.jpg";
+import avatarImage from "@/images/avatar.png";
 import React from "react";
 
 type AvatarContainerProps = {
