@@ -20,8 +20,6 @@ export async function getAllArticles() {
   let articles = await Promise.all(articleFilenames.map(importArticle));
 
   return articles.sort(
-    (a: any, z: any) =>
-      new Date(z.date).getUTCMilliseconds() -
-      new Date(a.date).getUTCMilliseconds()
+    (a: any, z: any) => new Date(z.date).getTime() - new Date(a.date).getTime()
   );
 }
