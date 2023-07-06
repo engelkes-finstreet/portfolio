@@ -5,7 +5,6 @@ import clsx from "clsx";
 
 import Container from "@/components/container";
 import portraitImage from "@/images/portrait.jpg";
-import { TwitterIcon } from "@/components/icons/social/TwitterIcon";
 import { InstagramIcon } from "@/components/icons/social/InstagramIcon";
 import { GitHubIcon } from "@/components/icons/social/GithubIcon";
 import { LinkedInIcon } from "@/components/icons/social/LinkedinIcon";
